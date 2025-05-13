@@ -41,7 +41,7 @@ test.describe('createVariables()', () => {
 });
 
 test.describe('divide()', () => {
-  test.skip(divide() === 'NOT IMPLEMENTED', 'divide() is not implemented');
+  test.skip(divide(2, 2) === 'NOT IMPLEMENTED', 'divide() is not implemented');
   const cases = [
     [42, 2, 21],
     [10, 5, 2],
@@ -57,7 +57,7 @@ test.describe('divide()', () => {
 });
 
 test.describe('canRideBigRollerCoaster()', () => {
-  test.skip(canRideBigRollerCoaster() === 'NOT IMPLEMENTED', 'canRideBigRollerCoaster() is not implemented');
+  test.skip(canRideBigRollerCoaster(122) === 'NOT IMPLEMENTED', 'canRideBigRollerCoaster() is not implemented');
 
   const cases = [
     [122, true],
@@ -76,7 +76,7 @@ test.describe('canRideBigRollerCoaster()', () => {
 });
 
 test.describe('calculate()', () => {
-  test.skip(calculate() === 'NOT IMPLEMENTED', 'calculate() is not implemented');
+  test.skip(calculate(42, 2, '+') === 'NOT IMPLEMENTED', 'calculate() is not implemented');
   const cases = [
     [42, 2, '+', 44],
     [42, 2, '-', 40],
@@ -95,7 +95,10 @@ test.describe('calculate()', () => {
 });
 
 test.describe('logIceCreamOrders()', () => {
-  test.skip(logIceCreamOrders() === 'NOT IMPLEMENTED', 'logIceCreamOrders() is not implemented');
+  test.skip(
+    logIceCreamOrders([1, 'Chocolate', true, [], 'Strawberry', 999.99, null]) === 'NOT IMPLEMENTED',
+    'logIceCreamOrders() is not implemented'
+  );
   const cases = [
     [
       [1, 'Chocolate', true, [], 'Strawberry', 999.99, null],
@@ -133,7 +136,10 @@ test.describe('logIceCreamOrders()', () => {
 });
 
 test.describe('countTypes()', () => {
-  test.skip(countTypes() === 'NOT IMPLEMENTED', 'countTypes() is not implemented');
+  test.skip(
+    countTypes([1, 'Chocolate', true, [], 'Strawberry', 999.99, null]) === 'NOT IMPLEMENTED',
+    'countTypes() is not implemented'
+  );
   const cases = [
     [
       [1, 'Chocolate', true, [], 'Strawberry', 999.99, null],
