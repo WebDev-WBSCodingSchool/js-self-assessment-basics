@@ -83,6 +83,9 @@ Testing is simply **running your code with Node and comparing the output to what
 2. Open the corresponding source file in **`src/`**.
 3. Fix your logic.
 4. Re-run the tests.
+5. Check for errors. The tests' assertions are written in a rather high-level way so they are easy to interpret, e.g. This test expected `myNumber` to be of type `number` but we are returning a `boolean`
+![Screenshot From 2025-05-16 16-57-18](https://github.com/user-attachments/assets/6842b178-ee24-4991-8e88-384da3106840)
+
 
 > 🔁 **Rinse & repeat** until everything is green. Any function left as "NOT IMPLEMENTED" will be skipped, but skipped tests still mean unfinished work—aim for zero skips!
 
